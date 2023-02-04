@@ -6,7 +6,12 @@ $secondbot = array();
 $thirdbot = array();
 $fourthbot = array();
 
-$conn= mysqli_connect("mysql09.domainhotelli.fi", "gjeulrkl_manager", "Taturou11!", "gjeulrkl_botusers");
+$host = "Enter your database host here";
+$username = "Enter your database username here";
+$password = "Enter your database password here";
+$dbname = "Enter your database name here";
+
+$conn= mysqli_connect($host, $username, $password, $dbanem);
 
               // Check connection
               if ($conn->connect_error) {
@@ -181,13 +186,13 @@ if (isset($firstbotsubs)) {
 
 
 
-$servername = "sdb-h.hosting.stackcp.net";
+  $host = "sdb-h.hosting.stackcp.net";
   $username = "sniper-31383655e0";
   $password = "u2R`vZMfg£JR";
   $dbname = "couch";
 
   // Create connection
-  $conn= mysqli_connect("sdb-h.hosting.stackcp.net", "sniper-31383655e0", "u2R`vZMfg£JR", "sniper-31383655e0");
+  $conn= mysqli_connect($host, $username, $password, $dbname);
   if(mysqli_connect_error()) {
 
     die("There was an error connecting to the database");
@@ -270,10 +275,10 @@ if ($oldId != $id) {
   
 // 1st BOT part 2: 0-50 euro sofa
 
-  $servername = "sdb-h.hosting.stackcp.net";
-  $username = "sniper-31383655e0";
-  $password = "u2R`vZMfg£JR";
-  $dbname = "pesukone";
+$host = "Enter your database host here";
+$username = "Enter your database username here";
+$password = "Enter your database password here";
+$dbname = "Enter your database name here";
 
   // Create connection
   $conn= mysqli_connect("sdb-h.hosting.stackcp.net", "sniper-31383655e0", "u2R`vZMfg£JR", "sniper-31383655e0");
@@ -397,13 +402,13 @@ if ($oldId == $id) {
 // MATTO BOT
 
 
-  $servername = "sdb-h.hosting.stackcp.net";
-  $username = "sniper-31383655e0";
-  $password = "u2R`vZMfg£JR";
-  $dbname = "hyllyt";
+$host = "Enter your database host here";
+$username = "Enter your database username here";
+$password = "Enter your database password here";
+$dbname = "Enter your database name here";
 
   // Create connection
-  $conn= mysqli_connect("sdb-h.hosting.stackcp.net", "sniper-31383655e0", "u2R`vZMfg£JR", "sniper-31383655e0");
+  $conn= mysqli_connect($host, $username, $password, $dbname);
   if(mysqli_connect_error()) {
 
     die("There was an error connecting to the database");
@@ -457,7 +462,7 @@ if ($oldId == $id) {
 } else {
 
   
-  $to = "jukolanveljekset@gmail.com, christopher.leo.nelson@gmail.com, mikael.wallid@gmail.com";
+  $to = "enter reciever emails here";
   $subject = "MATTO - ".$title;
   $txt = "Suora linkki ilmoitukseen: ".$link;
   $headers = "From: Matot@dubs.fi";
@@ -480,13 +485,13 @@ if ($oldId == $id) {
 
 // MIKRO BOT
 
-  $servername = "sdb-h.hosting.stackcp.net";
-  $username = "sniper-31383655e0";
-  $password = "u2R`vZMfg£JR";
-  $dbname = "poyta";
+$host = "Enter your database host here";
+$username = "Enter your database username here";
+$password = "Enter your database password here";
+$dbname = "Enter your database name here";
 
   // Create connection
-  $conn= mysqli_connect("sdb-h.hosting.stackcp.net", "sniper-31383655e0", "u2R`vZMfg£JR", "sniper-31383655e0");
+  $conn= mysqli_connect($host, $username, $password, $dbname);
   if(mysqli_connect_error()) {
 
     die("There was an error connecting to the database");
@@ -540,7 +545,7 @@ if ($oldId == $id) {
 } else {
 
   
-  $to = "jukolanveljekset@gmail.com, christopher.leo.nelson@gmail.com, mikael.wallid@gmail.com, jones.zamu@gmail.com";
+  $to = "enter subscriber emails here";
   $subject = "JAAKAAPPI - ".$title;
   $txt = "Suora linkki ilmoitukseen: ".$link;
   $headers = "From: jaakaappi@dubs.fi";
